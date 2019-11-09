@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBViewer", "DBViewer.csproj", "{42435D30-0339-453C-AF45-E6C51F0FC563}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {A9A658E5-6407-4829-82AC-6ECC55E1B124}
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{42435D30-0339-453C-AF45-E6C51F0FC563}.Debug.ActiveCfg = Debug|.NET
+		{42435D30-0339-453C-AF45-E6C51F0FC563}.Debug.Build.0 = Debug|.NET
+		{42435D30-0339-453C-AF45-E6C51F0FC563}.Release.ActiveCfg = Release|.NET
+		{42435D30-0339-453C-AF45-E6C51F0FC563}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

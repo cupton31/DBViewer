@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42435D30-0339-453C-AF45-E6C51F0FC563}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Gui\DBViewer.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>DBViewer</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DBViewer</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>DBViewer.Gui.DBViewerGui</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BL\DBViewerApp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BL\DBViewerCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BL\DBViewerCacheItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BL\IDBViewerApp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\DBViewerConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Log.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\UserCredentials.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAL\DBViewerDAL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gui\DatabaseDataGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\DatabaseTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Gui\DBViewerAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\DBViewerDataGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\DBViewerGui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\DBViewerGuiEnums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gui\DBViewerSqlServerRegistrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\IDBViewerGui.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gui\ImageViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Gui\DatabaseDataGrid.resx">
+      <DependentUpon>DatabaseDataGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DatabaseTreeView.resx">
+      <DependentUpon>DatabaseTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\db.ico" />
+    <EmbeddedResource Include="Gui\DBViewer.ico" />
+    <EmbeddedResource Include="Gui\DBViewerAbout.resx">
+      <DependentUpon>DBViewerAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DBViewerDataGrid.resx">
+      <DependentUpon>DBViewerDataGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DBViewerGui.resx">
+      <DependentUpon>DBViewerGui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DBViewerSqlServerRegistrar.resx">
+      <DependentUpon>DBViewerSqlServerRegistrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ImageViewer.resx">
+      <DependentUpon>ImageViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\noimage.bmp" />
+    <EmbeddedResource Include="Gui\root.ico" />
+    <EmbeddedResource Include="Gui\srv.ico" />
+    <EmbeddedResource Include="Gui\table.ico" />
+    <EmbeddedResource Include="Gui\unknown.bmp" />
+    <None Include="App.config" />
+    <None Include="Misc\DBViewer.vsd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>
